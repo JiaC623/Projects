@@ -37,6 +37,7 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
     _The ON output would keep counting (time, or distance after conversion) in this phase._
 
 - Phase 2: Signal sending
+    | I/O | 0/1 |
     | ----------- | ----------- |
     | Transmitter input: | Low (0) | 
     | Receiver input: | Low (0) | 
