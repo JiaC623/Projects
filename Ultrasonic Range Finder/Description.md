@@ -30,6 +30,8 @@ Since detection of the bounced-back signal would be used to indicate either the 
 Now things got easy. Our group used SR Latch to switch the counting-on and counting-off modes. Transmitter and receiver as inputs respectively.
 
 - Phase 1: Transmitter gives signal
+    | I/O components | values |
+    | ----------- | ----------- |
     | Transmitter input: | High (1) | 
     | Receiver input: | Low (0) | 
     | SR Latch output: | High (1) | 
@@ -37,7 +39,7 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
     _The ON output would keep counting (time, or distance after conversion) in this phase._
 
 - Phase 2: Signal sending
-    | I/O | 0/1 |
+    | I/O components | values |
     | ----------- | ----------- |
     | Transmitter input: | Low (0) | 
     | Receiver input: | Low (0) | 
@@ -46,6 +48,8 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
     _As signal is still sending, the counting would continue._
 
 - Phase 3: Receiver receives signal
+    | I/O components | values |
+    | ----------- | ----------- |
     | Transmitter input: | Low (0) | 
     | Receiver input: | High (1) | 
     | SR Latch output: | Low (0) | 
@@ -53,6 +57,8 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
     _Output is now terminated. We should get a value of result (remember it is double the time/distance)._
 
 - Phase 4: Waiting for new signal
+    | I/O components | values |
+    | ----------- | ----------- |
     | Transmitter input: | Low (0)| 
     | Receiver input: | Low (0)| 
     | SR Latch output: | No Change (0) |
