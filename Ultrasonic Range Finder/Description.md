@@ -37,6 +37,7 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
     _The ON output would keep counting (time, or distance after conversion) in this phase._
 
 - Phase 2: Signal sending
+    | ----------- | ----------- |
     | Transmitter input: | Low (0) | 
     | Receiver input: | Low (0) | 
     | SR Latch output: | No Change (1) | 
@@ -60,6 +61,11 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
 <br>
 
 ## Photos 
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 555 time with resistor, capacitor, and potentiometer (easy to adjust resistance as needed) <br>
 <img src="/images/555timer.jpg" style="width:300px;height:300px;object-fit: cover;">
