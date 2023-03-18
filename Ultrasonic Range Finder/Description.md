@@ -30,30 +30,30 @@ Since detection of the bounced-back signal would be used to indicate either the 
 Now things got easy. Our group used SR Latch to switch the counting-on and counting-off modes. Transmitter and receiver as inputs respectively.
 
 - Phase 1: Transmitter gives signal
-    Transmitter input: High (1)
-    Receiver input: Low (0)
-    SR Latch output: High (1)
+    <br>Transmitter input: High (1)
+    <br>Receiver input: Low (0)
+    <br>SR Latch output: High (1)
 
     _The ON output would keep counting (time, or distance after conversion) in this phase._
 
 - Phase 2: Signal sending
-    Transmitter input: Low (0)
-    Receiver input: Low (0)
-    SR Latch output: No Change (1)
+    <br>Transmitter input: Low (0)
+    <br>Receiver input: Low (0)
+    <br>SR Latch output: No Change (1)
 
     _As signal is still sending, the counting would continue._
 
 - Phase 3: Receiver receives signal
-    Transmitter input: Low (0)
-    Receiver input: High (1)
-    SR Latch output: Low (0)
+    <br>Transmitter input: Low (0)
+    <br>Receiver input: High (1)
+    <br>SR Latch output: Low (0)
 
     _Output is now terminated. We should get a value of result (remember it is double the time/distance)._
 
 - Phase 4: Waiting for new signal
-    Transmitter input: Low (0)
-    Receiver input: Low (0)
-    SR Latch output: No Change (0)
+    <br>Transmitter input: Low (0)
+    <br>Receiver input: Low (0)
+    <br>SR Latch output: No Change (0)
 
     _Before the new pulse is sent and transmitter being output high again, the counter would remain paused. Reset setting could be triggered in this phase/or beginning of phase 1._
 
@@ -62,10 +62,11 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
 ## Photos 
 
 555 time with resistor, capacitor, and potentiometer (easy to adjust resistance as needed)
-![555 Timer](/images/555timer.jpg)
+<img src="/images/555timer.jpg" style="width:300px;height:250px;object-fit: cover;">
 
 7-segment display and its driver (datasheet needed)
-![7-segment display](/images/bridge%20to%20hex%20display.jpg)
+<img src="/images/bridge%20to%20hex%20display.jpg" style="width:300px;height:250px;object-fit: cover;">
+
 
 overlapped signal
-![overlapped signal](/images/overlapped%20signal.jpg)
+<img src="/images/overlapped%20signal.jpg" style="width:300px;height:250px;object-fit: cover;">
