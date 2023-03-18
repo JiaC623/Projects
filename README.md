@@ -3,10 +3,12 @@ Projects is a record of my school projects during academic years.
 Feel free to take a look at the lab or project folders.
 Below is some knowledge when I created this repo.
 
+<br>
 
 ## What is SSH key?
 > An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
----- resource from [Atlassian][atlassian-link]
+
+---- resource from [Atlassian.com][atlassian-link]
 
 SSH keys are a popular and widely used method for secure authentication and communication over a network, not everyone uses them, and there are other methods for securing connections.
 
@@ -16,14 +18,16 @@ SSH keys are a popular and widely used method for secure authentication and comm
 
 - VPN and other IP restrictions 
 
-    In some cases, access to a network or system may be restricted based on the user's IP address, or access may be granted only through a virtual private network (VPN), which can provide an additional layer of security.
+    In some cases, access to a network or system may be restricted based on the user's IP address, or access may be granted only through a virtual private networ
+
+<br>
 
 ## About Creating Repository
 I made it done since I followed the video to setup git bash, SSH keys and other things else. Finding videos on YouTube would be fast.
 
 1. Go to the directory you want to create `.git`
 
-```c
+```bash
 # browse the directory you want to create the repo
 cd "D:\Github\DesiredFolder"
 
@@ -34,7 +38,7 @@ mkdir FolderName
 
 2. Initialize `.git` (and give some files to commit if you want)
 
-```c
+```bash
 # initialize an empty Git repository named "main", 
 # with default branch using " -b "
 $ git init -b main
@@ -47,7 +51,7 @@ $ git commit -m "First commit"
 
 3. Link the remote URL to this location
 
-```c
+```bash
 # remote repository URL can be found at the top of repo
 # or click "code" to see
 # now build connection 
@@ -58,7 +62,7 @@ $ git remote -v
 
 4. Done and Push `origin`
 
-```c
+```bash
 # push the changes 
 $ git push origin main
 ```
