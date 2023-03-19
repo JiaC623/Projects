@@ -29,7 +29,10 @@ The second thing was to understand the use of JK flip-flop. <br>
 | 1 | 1 | !Q_n(toggle) |
 <br>
 Now we can generate a table (yes it is long) for J and !K values corresponding to each bit in each individual student number. <br>
-:point_right: Take student number 2012300 for example. Each of the bits, from Q4 to C1, would have its own J and !K values. <br>
+:point_right: Take student number 2012300 for example. Each of the bits, from Q4 to C1, would have its own J and !K values. 
+
+<br>
+
 | student number | Q4 | Q3 | Q2 | Q1 | C2 | C1 |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | 2 | 0 | 0 | 1 | 0 | 0 | 0 |
@@ -39,7 +42,9 @@ Now we can generate a table (yes it is long) for J and !K values corresponding t
 | 3 | 0 | 0 | 1 | 1 | X | X |
 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+
 <br>
+
 Notice the rows of different 0 and 2. And the single 1 and 3 would be X because it did not matter. <br>
 For this reason, the combination of counter bits can also differ, making it maybe easier or harder for circuit. And it would need to find the optimum case. <br>
 <br>
@@ -56,20 +61,20 @@ After we had done **K-mapping** (Karnaugh map, a method to simplify Boolean alge
 - :star2: for SOP
 
 :point_right: See the example below:<br>
-<img src="./K-mapping.png" style="width:60%;height:60%;object-fit: cover;">
+<img src="./images/K-mapping.png" style="width:60%;height:60%;object-fit: cover;">
 <br>
 Boolean expression would be: <br>
-<img src="./SOP.png" style="width:100%;height:100%;object-fit: cover;">
+<img src="./images/SOP.png" style="width:100%;height:100%;object-fit: cover;">
 
 <br>
 <br>
     
 - :star2: for POS
 
-<img src="./K-mapping-POS.png" style="width:60%;height:60%;object-fit: cover;">
+<img src="./images/K-mapping-POS.png" style="width:60%;height:60%;object-fit: cover;">
 <br>
 Boolean expression would be: <br>
-<img src="./POS.png" style="width:100%;height:100%;object-fit: cover;">
+<img src="./images/POS.png" style="width:100%;height:100%;object-fit: cover;">
 
 <br>
 <br>
@@ -80,5 +85,7 @@ They would be further expanded and provide some relationships that are applicabl
 
 In application, keep in mind that gates are interconvertible.
 
-<img src="./gate1.png" style="width:100%;height:100%;object-fit: cover;">
-<img src="./gate2.png" style="width:100%;height:100%;object-fit: cover;">
+<img src="./images/gate1.png" style="width:100%;height:100%;object-fit: cover;">
+<img src="./images/gate2.png" style="width:100%;height:100%;object-fit: cover;">
+
+![s](./images/gate1.png)
