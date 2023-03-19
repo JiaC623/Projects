@@ -1,4 +1,5 @@
 # Ultrasonic Range Finder
+2022.10 - 2022.12
 Idea was originally brought up from McMaster Course ENGPHYS 3BA4, and each group found their own ways to achieve the objective.
 
 <br>
@@ -118,4 +119,4 @@ Yellow signal was amplified, and purple one was original directly from receiver.
 
 _It was important to test individual module and make sure they worked one by one in a big project, since it would be easier to troubleshoot a small part. And it would make the following modules to incorporate easily._
 
-More photos can be sent in image folder.
+More photos can be seen in image folder.
