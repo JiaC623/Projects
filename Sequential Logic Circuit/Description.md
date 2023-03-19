@@ -2,10 +2,14 @@
 2021.11 - 2021.12
 From course ENGPHYS 2E04. The objective was to create a sequential logic circuit to blink the LEDs in the order of our student number.<br>
 <br>
-<br>
-Since 2^3 = 8 < 9 < 2^4, we would need 4 bit binary to represent number. If some numbers repeated, then we would like to add counter number to distinguish. <br> 
-:point_right: For instance, <strong>two</strong> 2s would need 1 bit counter numbers: [0],[1]; <br>
-<strong>three</strong> 0s would need 2 bit counter numbers [00], [01], [10]. <br>
+
+_Since 2^3 = 8 < 9 < 2^4, we would need 4 bit binary to represent number. If some numbers repeated, then we would like to add counter number to distinguish._ 
+<br> 
+
+> _For instance, <strong>two</strong> 2s would need 1 bit counter numbers: [0],[1];_ <br>
+
+> _<strong>three</strong> 0s would need 2 bit counter numbers [00], [01], [10]._ <br>
+
 <br>
 In total, 4+2=6 bits were required.<br>
 Each bit would need both J and !K to determine.<br>
@@ -29,8 +33,9 @@ The second thing was to understand the use of JK flip-flop. <br>
 | 1 | 1 | !Q_n(toggle) |
 <br>
 Now we can generate a table (yes it is long) for J and !K values corresponding to each bit in each individual student number. <br>
-:point_right: Take student number 2012300 for example. Each of the bits, from Q4 to C1, would have its own J and !K values. 
+Take student number 2012300 for example. Each of the bits, from Q4 to C1, would have its own J and !K values. 
 
+<br>
 <br>
 
 | student number | Q4 | Q3 | Q2 | Q1 | C2 | C1 |
@@ -60,21 +65,21 @@ After we had done **K-mapping** (Karnaugh map, a method to simplify Boolean alge
 
 - :star2: for SOP
 
-:point_right: See the example below:<br>
-<img src="./images/K-mapping.png" style="width:60%;height:60%;object-fit: cover;">
+_See the example below_: <br>
+<img src="./images/K-mapping.png" style="width:40%;height:40%;object-fit: cover;">
 <br>
 Boolean expression would be: <br>
-<img src="./images/SOP.png" style="width:100%;height:100%;object-fit: cover;">
+<img src="./images/SOP.png" style="width:40%;height:40%;object-fit: cover;">
 
 <br>
 <br>
     
 - :star2: for POS
 
-<img src="./images/K-mapping-POS.png" style="width:60%;height:60%;object-fit: cover;">
+<img src="./images/K-mapping-POS.png" style="width:40%;height:40%;object-fit: cover;">
 <br>
 Boolean expression would be: <br>
-<img src="./images/POS.png" style="width:100%;height:100%;object-fit: cover;">
+<img src="./images/POS.png" style="width:40%;height:40%;object-fit: cover;">
 
 <br>
 <br>
@@ -85,7 +90,5 @@ They would be further expanded and provide some relationships that are applicabl
 
 In application, keep in mind that gates are interconvertible.
 
-<img src="./images/gate1.png" style="width:100%;height:100%;object-fit: cover;">
-<img src="./images/gate2.png" style="width:100%;height:100%;object-fit: cover;">
-
-![s](./images/gate1.png)
+<img src="./images/gate1.png" style="width:40%;height:40%;object-fit: cover;">
+<img src="./images/gate2.png" style="width:40%;height:40%;object-fit: cover;">
