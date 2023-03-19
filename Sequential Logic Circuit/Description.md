@@ -18,7 +18,7 @@ Each bit would need both J and !K to determine.<br>
 <br>
 <br>
 
-## Process
+## :sparkles: Process
 The key point was to find out the logic of this sequence of numbers. <br>
 <br>
 
@@ -63,7 +63,7 @@ After we had done **K-mapping** (Karnaugh map, a method to simplify Boolean alge
 
 <br>
 
-- :star2: for SOP
+- :star: for SOP
 
 _See the example below_: <br>
 <img src="./images/K-mapping.png" style="width:40%;height:40%;object-fit: cover;">
@@ -74,7 +74,7 @@ Boolean expression would be: <br>
 <br>
 <br>
     
-- :star2: for POS
+- :star: for POS
 
 <img src="./images/K-mapping-POS.png" style="width:40%;height:40%;object-fit: cover;">
 <br>
@@ -90,14 +90,17 @@ They would be further expanded and provide some relationships that are applicabl
 
 In application, keep in mind that gates are interconvertible.
 
-<img src="./images/gate1.png" style="width:40%;height:40%;object-fit: cover;display:inline-block;">
-<img src="./images/gate2.png" style="width:40%;height:40%;object-fit: cover;display:inline-block;">
+Conversion 1            |  Conversion 2
+:-------------------------:|:-------------------------:
+<img src="./images/gate1.png" style="width:70%;height:70%;object-fit: cover;">  |  <img src="./images/gate2.png" style="width:70%;height:70%;object-fit: cover;">
+
+
 
 <br>
 <br>
 <br>
 
-## Final Product Photos
+## :sparkles: Final Product Photos
 ### NI MultiSim Digital Circuit
 <img src="./images/NI-circuit.png" style="width:40%;height:40%;object-fit: cover;">
 
@@ -130,11 +133,9 @@ _Clock signal was bulit using transistor and function generator. May research mo
 
 ### Digital Display and Driver
 
-<br>
-
 Pinout Sheet       |  Actual Built
 :-------------------------:|:-------------------------:
-<img src="./images/7display.png" style="width:40%;height:40%;object-fit: cover;">  |  <img src="./images/7display-physical.png" style="width:40%;height:40%;object-fit: cover;">
+<img src="./images/7display.png" style="width:70%;height:70%;object-fit: cover;">  |  <img src="./images/7display-physical.png" style="width:70%;height:70%;object-fit: cover;">
 
 <br>
 
