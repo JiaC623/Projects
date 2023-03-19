@@ -15,7 +15,9 @@ The objectives included:
 <br>
 <br>
 
-The inventor files (parts, assemblies, and drawing dimensions) can be seen in folder.
+The inventor files (parts, assemblies, and drawing dimensions) can be seen in folder.<br>
+
+The toolbox has a rotatable hinge and the "bolt" has a few millimeters of gap in between so that 3D printing would not make them as a whole and let it actually "detachable". The used 3D printer software was Prusa Slicer.
 
 <br>
 
