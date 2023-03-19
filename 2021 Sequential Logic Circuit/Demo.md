@@ -68,8 +68,9 @@ After we had done **K-mapping** (Karnaugh map, a method to simplify Boolean alge
 _See the example below_: <br>
 <img src="./images/K-mapping.png" style="width:40%;height:40%;object-fit: cover;">
 <br>
-Boolean expression would be: <br>
-<img src="./images/SOP.png" style="width:40%;height:40%;object-fit: cover;">
+
+> Boolean expression would be: <br>
+<img src="./images/SOP.png" style="width:30%;height:30%;object-fit: cover;">
 
 <br>
 <br>
@@ -78,7 +79,8 @@ Boolean expression would be: <br>
 
 <img src="./images/K-mapping-POS.png" style="width:40%;height:40%;object-fit: cover;">
 <br>
-Boolean expression would be: <br>
+
+> Boolean expression would be: <br>
 <img src="./images/POS.png" style="width:40%;height:40%;object-fit: cover;">
 
 <br>
@@ -92,7 +94,7 @@ In application, keep in mind that gates are interconvertible.
 
 Conversion 1            |  Conversion 2
 :-------------------------:|:-------------------------:
-<img src="./images/gate1.png" style="width:70%;height:70%;object-fit: cover;">  |  <img src="./images/gate2.png" style="width:70%;height:70%;object-fit: cover;">
+<img src="./images/gate1.png" style="width:120%;height:120%;object-fit: cover;">  |  <img src="./images/gate2.png" style="width:120%;height:120%;object-fit: cover;">
 
 
 
@@ -135,7 +137,7 @@ _Clock signal was bulit using transistor and function generator. May research mo
 
 Pinout Sheet       |  Actual Built
 :-------------------------:|:-------------------------:
-<img src="./images/7display.png" style="width:70%;height:70%;object-fit: cover;">  |  <img src="./images/7display-physical.png" style="width:70%;height:70%;object-fit: cover;">
+<img src="./images/7display.png" style="width:120%;height:120%;object-fit: cover;">  |  <img src="./images/7display-physical.png" style="width:120%;height:120%;object-fit: cover;">
 
 <br>
 
