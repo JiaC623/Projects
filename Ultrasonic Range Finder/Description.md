@@ -70,19 +70,40 @@ Now things got easy. Our group used SR Latch to switch the counting-on and count
 ## Photos 
 ### 555 Timer to generate desired signals
 555 time with resistor, capacitor, and potentiometer (easy to adjust resistance as needed) following the equation, you would need to calculate what values of them are appropriate. <br>
-<img src="./images/555timer.jpg" style="width:504px;height:672px;object-fit: cover;">
+<img src="./images/555timer.jpg" style="width:40%;height:40%;object-fit: cover;">
+
+
+
+### Duty cycle
+The graph of a well-performing duty cycle would be like: <br>
+<img src="./images/duty%20cycle.jpg" style="width:40%;height:40%;object-fit: cover;">
+
+
+
+### Full setup for generating signal
+In this picture were NOT gate, AND gate, amplifier, and comparator. Using NOT gate because 555 timer was not able to operate duty cycle below 50%, generating 99.8% duty cycle instead would be better. Comparator was used to convert analog to digital signal, as well as filter out noise, which was a great component to have in circuit! <br>
+<img src="./images/generate%20signal.jpg" style="width:40%;height:40%;object-fit: cover;">
+
+
 
 ### 7-segment display and its driver 
 Go to find datasheet of your display unit, be careful to wire up. <br>
-<img src="./images/bridge%20to%20hex%20display.jpg" style="width:50%;height:50%;object-fit: cover;">
+<img src="./images/bridge%20to%20hex%20display.jpg" style="width:40%;height:40%;object-fit: cover;">
+
+
 
 ### Result of transmitter and receiver signal on oscilloscope
 Overlapped signals when duty cycle, or chosen frequency were not appropriate to have them separate. For example, if the pulse length was too long, before the pulse was fully sent, receiver already had the signal back. <br>
-<img src="./images/overlapped%20signal.jpg" style="width:300px;height:300px;object-fit: cover;">
+<img src="./images/overlapped%20signal.jpg" style="width:40%;height:40%;object-fit: cover;">
+
+
 
 ### Amplified signal on oscilloscope
 Yellow signal was amplified, and purple one was original directly from receiver. Depends on transmitter and receiver. In this case, both transducers were delicate and own small impedence, the detected signal had very small amplitude. As this happened, should always consider about amplifiers. <br>
-<img src="./images/amplified%20signal.jpg" style="width:300px;height:300px;object-fit: cover;">
+<img src="./images/amplified%20signal.jpg" style="width:40%;height:40%;object-fit: cover;">
 
-![sa](./images/amplified%20signal.jpg)
-more photos can be sent in image folder.
+
+
+_It was important to test individual module and make sure they worked one by one in a big project, since it would be easier to troubleshoot a small part. And it would make the following modules to incorporate easily._
+
+More photos can be sent in image folder.
