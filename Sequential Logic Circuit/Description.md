@@ -90,5 +90,41 @@ They would be further expanded and provide some relationships that are applicabl
 
 In application, keep in mind that gates are interconvertible.
 
-<img src="./images/gate1.png" style="width:40%;height:40%;object-fit: cover;">
-<img src="./images/gate2.png" style="width:40%;height:40%;object-fit: cover;">
+<img src="./images/gate1.png" style="width:40%;height:40%;object-fit: cover;display:inline-block;">
+<img src="./images/gate2.png" style="width:40%;height:40%;object-fit: cover;display:inline-block;">
+
+<br>
+<br>
+<br>
+
+## Final Product Photos
+### NI MultiSim Digital Circuit
+<img src="./images/NI-circuit.png" style="width:40%;height:40%;object-fit: cover;">
+
+<br>
+<br>
+
+### Physical Built-up Decomposite to Base Setup
+<img src="./images/physical1.png" style="width:40%;height:40%;object-fit: cover;">
+
+<br>
+<br>
+
+### Physical Built-up Decomposite to Clock Signal Setup
+<img src="./images/physical2.png" style="width:40%;height:40%;object-fit: cover;">
+
+<br>
+<br>
+
+### Physical Built-up Overview
+<img src="./images/overview.png" style="width:40%;height:40%;object-fit: cover;">
+
+<br>
+<br>
+
+### Digital Display and Driver
+<img src="./images/7display.png" style="width:40%;height:40%;object-fit: cover;display:inline-block;">
+<img src="./images/7display-physical.png" style="width:40%;height:40%;object-fit: cover;display:inline-block;">
+
+<br>
+<br>
