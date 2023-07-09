@@ -25,7 +25,7 @@ Below are what it can and cannot do.
 The Home Page should initially look like:
 <br>
 <br>
-<img src="./demo-pictures/ini-page.png" style="width:40%;height:40%;">
+<img src="./demo-pictures/ini-page.png" style="width:120%;height:120%;">
 
 
 ### Images, Blogs, Todos!
@@ -46,17 +46,17 @@ The Home Page should initially look like:
 > A Big Thing to Notice... I haven't inplemented a way to update/edit the existing items, so if you want to edit, you will need to delete and create new. That's why I say this is really a simple local site.
 <br>
 <br>
-<img src="./demo-pictures/todo-create-page.png" style="width:40%;height:40%;">
+<img src="./demo-pictures/todo-create-page.png" style="width:120%;height:120%;">
 <br>
 <br>
-<img src="./demo-pictures/blog-create-page.png" style="width:40%;height:40%;">
+<img src="./demo-pictures/blog-create-page.png" style="width:120%;height:120%;">
 <br>
 <br>
 
 > Image Collection; if its Media-Type is a new one, the new Media-Type will also be displayed on the side. 
 <br>
 <br>
-<img src="./demo-pictures/imageCollection-create-page.png" style="width:40%;height:40%;">
+<img src="./demo-pictures/imageCollection-create-page.png" style="width:120%;height:120%;">
 
 <br>
 <br>
