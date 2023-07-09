@@ -3,7 +3,7 @@ First of all, the functionalities are not very complete. <br>
 The work is highly based on YouTube Videos [Node.js Crash Course Tutorial](https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU), Public Weather API website [Open-Meteo](https://open-meteo.com/en/docs), and answers from [stack overflow](https://stackoverflow.com/). Please go check out these resources and they are greatly helpful. <br>
 <br>
 <br>
-<img src="./demo-pictures/overall.png" style="width:80%;height:80%;">
+<img src="./demo-pictures/overall.png" style="width:120%;height:120%;">
 
 <br>
 
