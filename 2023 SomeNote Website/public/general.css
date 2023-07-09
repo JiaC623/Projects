@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face {
+    font-family: 'iconfont';  /* Project id 4118910 */
+    src: url('//at.alicdn.com/t/c/font_4118910_aa96r0amf2c.woff2?t=1688837751159') format('woff2'),
+         url('//at.alicdn.com/t/c/font_4118910_aa96r0amf2c.woff?t=1688837751159') format('woff'),
+         url('//at.alicdn.com/t/c/font_4118910_aa96r0amf2c.ttf?t=1688837751159') format('truetype');
+  }
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+ul li{list-style: none;}
+
+
+.container{max-width: 1400px;margin: 2em auto;}
+.page-title{color: rgb(195, 190, 190);}
+.AFfont{font-family: 'Abril Fatface', cursive;}
+.inline-blocks{display: inline-block;}
+.float-lefts{float: left; margin-right: 100px;}
+.iconSyntax{font-family: 'iconfont';}
+
+.decoration-pattern{
+    color: white;
+}

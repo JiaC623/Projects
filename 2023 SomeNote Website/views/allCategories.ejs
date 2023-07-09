@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+<div class="container">
+
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="operate-box">
+        <div class="create-display">
+            <form action="/all-cates" method="POST">
+                <label for="name">NEW category name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="mediaType">Give it a Type to categorize this collection:</label>
+                <input type="text" id="mediaType" name="mediaType">
+
+                <label for="txtBody">Describe a little bit about it!</label>
+                <textarea name="txtBody" id="txtBody" cols="30" rows="10"></textarea>
+                
+                <button class="create-btn"> CREATE COLLECTION/CATEGORY </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="all-categories">
+
+        <% if (categories.length>0) { %>
+            <% categories.forEach(cate => { %>
+                <div>
+                <a href="/all-cates/<%= cate._id %>">
+                    <h3 class="iconSyntax"> &#xe61f; <%= cate.name %></h3>
+                    <h4><%= cate.txtBody %></h4>
+                </a>
+                </div>
+            <% }); %>
+        <% } %>    
+
+    </div>
+
+
+</div>
+</body>
+
+</html>
+<script>
+    const navTags = document.querySelectorAll("nav ul li");
+    navTags[1].classList.add('selected-tag');
+
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<div class="container">
+
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="blogs-area float-lefts">
+        <% if(blogs.length>0){  %>
+            <% blogs.forEach(blog => {  %>
+            <div class="blog-display">
+                <a href="/all-blogs/<%= blog._id %>">
+                    <h3><%= blog.title %></h3>
+                    <h5><%= blog.snippet %></h5>
+                    <p><%= blog.texts %></p>
+                </a>
+            </div>
+            <% }); %>
+        <% } %>
+    </div>
+
+    <div class="float-lefts">
+        <form action="/all-blogs" method="POST">
+            <label for="blog-title">NEW Blog Title</label>
+            <input type="text" id="title" name="title" required>
+    
+            <label for="blog-snippet">NEW Blog Snippet</label>
+            <input type="text" id="snippet" name="snippet" required>
+    
+            <label for="blog-body">NEW Blog Body</label>
+            <textarea name="texts" id="texts" cols="30" rows="10"></textarea>
+    
+            <button class="create-btn">CREATE BLOG</button>
+        </form>
+    </div>
+
+
+
+</div>
+</body>
+</html>
+<script>
+    const navTags = document.querySelectorAll("nav ul li");
+
+    navTags[2].classList.add('selected-tag');
+
+</script>

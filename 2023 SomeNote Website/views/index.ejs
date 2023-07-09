@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<div class="container">
+
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="index-interface">
+
+        <div class="first-col">
+            <div class="dynamicTime">
+                <p>Hamilton, ON</p>
+                <div class="time"></div>
+                <div class="weather-block">
+                    <div class="weather" style=" background-position: <%= bgposition %>;">
+                        <p> <%= bgposition %> </p>
+                    </div>
+                </div>
+                
+                <div class="date-block">
+                    <div class="month"></div>
+                    <div class="date"></div>
+                    <p>temp: <%= tempCode %>&#8451;</p>
+                </div>
+            </div>
+
+            <ul class="todo-list">
+                <a href="/all-todos" class="AFfont" style="color: white;">ToDo LisT</a>
+                <% if(todos.length>0){ %>
+                    <% todos.forEach(todo => { %>
+                        <li><span class="iconSyntax">&#xec35; &nbsp;</span><a href="/all-todos/"><%= todo.taskTitle %></a></li>
+                    <% }); %>
+                <% } else { %>
+                    <li style="text-align: center;">
+                        <a href="/all-todos" style="
+                            text-decoration: none;
+                            font-weight: bold;
+                            color: white;
+                        ">you have everything cleared!</a></li>
+                <% } %>
+            </ul>
+        </div>
+
+        <div class="feature-module">
+            <div class="feature-head">
+                <p class="AFfont">Today's Featured Photos</p>
+                <p><%= selectDoc %></p>
+                
+            </div>
+
+            <div class="feature-opts"> 
+                <div class="media-type">
+                    <% typesArr.forEach(mediaType => { %>
+                        <div><span class="iconSyntax">&#xe668; &nbsp;</span><a data-doc="<%= mediaType %>" class="media-btn"><%= mediaType %></a></div>     
+                    <% }); %>
+                </div>
+                
+
+                <div class="otherCates">
+                    <div><a href="/all-cates">All</a></div>
+                    <% if(namesArr>0){ %>
+                    <% namesArr.forEach(name => { %>
+                        <div data-doc="<%= name %>" class="iconSyntax">&#xe61f;
+                            <span style="font-family: Arial, Helvetica, sans-serif;"><%= name %></span> 
+                        </div>
+                    <% }); %>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="feature-frame">
+                <div class="feature-pics">
+                    <img src="">
+                </div>
+
+                <div class="feature-thumbnail">
+                    <% let cnt = 0 %>
+                    <% for(let i=0;i<fileNumber;i++){ %>
+                        <div><img src="/imgs/<%=selectDoc.replace(/\s/g,'%20')%>/<%=fileName[i]%>"></div>
+                        <% cnt++ %>
+                        <% if(cnt==5){ %>
+                            <% break %>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+            
+        </div>
+    
+        <ul class="blog-list">
+            <a href="/all-blogs" class="AFfont" style="color: white;">LaTest Posts</a>
+            <% if(blogs.length>0){ %>
+                <% blogs.forEach(blog => { %>
+                    <li>
+                        <a href="/all-blogs/<%= blog._id %>">
+                            <p><%= blog.title %></p>
+                            <p><%= blog.snippet %></p>
+                        </a>
+                    </li>
+                <% }); %>
+            <% } else { %>
+                <li>
+                    <a href="/all-blogs">
+                        <p style="
+                        width: 100%;
+                        text-align: center;
+                        color: white;
+                        line-height: 84px;">No Blogs YET!</p>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+
+
+        <div class="decoration-pattern">
+            <!-- image and text icon -->
+            <span class="iconSyntax">&#xe601;</span>
+            <!-- planet icon -->
+            <span class="iconSyntax">&#xe8e7;</span>
+            <!-- play icon -->
+            <span class="iconSyntax">&#xe8a3;</span>
+            <!-- console icon -->
+            <span class="iconSyntax">&#xe649;</span>
+            <!-- task icon -->
+            <span class="iconSyntax">&#xe627;</span>
+
+            <!-- <span>HOW</span>
+            <span>have you been?</span> -->
+            
+        </div>
+
+    </div>
+
+
+    
+
+
+</div>
+</body>
+</html>
+<script>
+
+let navTags = document.querySelectorAll("nav ul li");
+
+let timeText = document.querySelector(".time");
+let monthText = document.querySelector(".month");
+let dateText = document.querySelector(".date");
+
+const featureThumbnails = document.querySelectorAll(".feature-thumbnail div img");
+const featurePic = document.querySelector(".feature-pics img");
+
+navTags[0].classList.add('selected-tag');
+
+// console.log(today.toLocaleDateString("en-US", options)); 
+var options = { month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second:'numeric', hour12: false };
+var today  = new Date();
+
+let tot = today.toLocaleDateString("en-US", options);
+let month = tot.slice(0,4);
+let date = tot.slice(5,7);
+
+monthText.innerHTML = `${month}`;
+dateText.innerHTML = `${date}`;
+
+setInterval(() => {
+    let now = new Date();
+
+    let hrs = (now.getHours()<10) ? '0'+now.getHours() : now.getHours();
+    let min = (now.getMinutes()<10) ? '0'+now.getMinutes() : now.getMinutes();
+    let sec = (now.getSeconds()<10) ? '0'+now.getSeconds() : now.getSeconds();
+
+    timeText.innerHTML = `${hrs}:${min}:${sec}`;
+    
+}, 1000);
+
+featurePic.setAttribute('src', featureThumbnails[0].src);
+
+featureThumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function(){
+        // console.log(thumbnail)
+        featurePic.setAttribute('src', thumbnail.src);
+    })
+})
+
+
+
+</script>

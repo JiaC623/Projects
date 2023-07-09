@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<div class="container">
+
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="float-lefts">
+        <form action="/all-todos" method="POST">
+            <label for="taskTitle">NEW todo title</label>
+            <input type="text" id="taskTitle" name="taskTitle" required>
+
+            <label for="taskInfo">What's the plan? <br> <i>(due : location: people : process)</i> </label>
+            <textarea name="taskInfo" id="taskInfo" cols="30" rows="10" required></textarea>
+            
+            <button class="create-btn"> CREATE TODO </button>
+        </form>
+    </div>
+
+
+    <div class="todos-display float-lefts">
+        <% if (todos.length>0) { %>
+            <% todos.forEach(todo => { %>
+                <div>
+                <h3 class="iconSyntax">&#xec35; <%= todo.taskTitle %></h3>
+                <p><%= todo.taskInfo %></p>
+                <br><a class="trashcan" data-doc="<%= todo._id %>">
+                    <img src="/trashcan.svg">
+                </a>
+                </div>
+            <% }); %>
+        <% } %> 
+    </div>
+
+
+    
+</div>    
+</body>
+</html>
+<script>
+    const navTags = document.querySelectorAll("nav ul li");
+
+    const trashcan = document.querySelectorAll(".trashcan");
+
+    navTags[3].classList.add('selected-tag');
+
+    trashcan.forEach(trashItem => {
+        const endpoint = `/all-todos/${trashItem.dataset.doc}`;
+
+        trashItem.addEventListener('click', function(){
+            fetch(endpoint, {
+                method: 'DELETE'
+            })
+            .then(response => response.json())
+            .then(data => window.location.href = data.redirect)
+            .catch(err => console.log(err))
+        })
+
+
+    })
+</script>
