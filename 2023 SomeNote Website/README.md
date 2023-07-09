@@ -46,9 +46,11 @@ The Home Page should initially look like:
 > A Big Thing to Notice... I haven't inplemented a way to update/edit the existing items, so if you want to edit, you will need to delete and create new. That's why I say this is really a simple local site.
 <br>
 <br>
+**ToDo Create Page**
 <img src="./demo-pictures/todo-create-page.png" style="width:120%;height:120%;">
 <br>
 <br>
+**Blog Create Page**
 <img src="./demo-pictures/blog-create-page.png" style="width:120%;height:120%;">
 <br>
 <br>
@@ -56,8 +58,12 @@ The Home Page should initially look like:
 > Image Collection; if its Media-Type is a new one, the new Media-Type will also be displayed on the side. 
 <br>
 <br>
+**Image-Collection Create Page**
 <img src="./demo-pictures/imageCollection-create-page.png" style="width:120%;height:120%;">
-
+<br>
+<br>
+**Image-Collection Detail Page**
+<img src="./demo-pictures/imageCollection-detail.png" style="width:120%;height:120%;">
 <br>
 <br>
 <br>
@@ -66,7 +72,6 @@ The Home Page should initially look like:
 
 The site is all in `px`, I want it to display on a big screen (that's my laptop), so I did not include `em` to adjust tablet, phone or other screen size. 
 
-<br>
 <br>
 <br>
 
