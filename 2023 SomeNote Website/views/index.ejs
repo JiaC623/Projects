@@ -42,6 +42,9 @@
                             color: white;
                         ">you have everything cleared!</a></li>
                 <% } %>
+
+            
+                <span class="iconSyntax">&#xe627;</span>
             </ul>
         </div>
 
@@ -62,12 +65,12 @@
 
                 <div class="otherCates">
                     <div><a href="/all-cates">All</a></div>
-                    <% if(namesArr>0){ %>
-                    <% namesArr.forEach(name => { %>
-                        <div data-doc="<%= name %>" class="iconSyntax">&#xe61f;
-                            <span style="font-family: Arial, Helvetica, sans-serif;"><%= name %></span> 
-                        </div>
-                    <% }); %>
+                    <% if(namesArr.length>0){ %>
+                        <% namesArr.forEach(name => { %>
+                            <div data-doc="<%= name %>" class="iconSyntax">&#xe61f;
+                                <span style="font-family: Arial, Helvetica, sans-serif;"><%= name %></span> 
+                            </div>
+                        <% }); %>
                     <% } %>
                 </div>
             </div>
@@ -125,11 +128,7 @@
             <span class="iconSyntax">&#xe8a3;</span>
             <!-- console icon -->
             <span class="iconSyntax">&#xe649;</span>
-            <!-- task icon -->
-            <span class="iconSyntax">&#xe627;</span>
 
-            <!-- <span>HOW</span>
-            <span>have you been?</span> -->
             
         </div>
 

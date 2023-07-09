@@ -3,7 +3,7 @@ const Blog = require('../models/blog');
 
 const allBlogGet = (req, res) => {
 
-    Blog.find().sort()
+    Blog.find().sort({createdAt: -1})
     .then(result => {
         res.render('allBlogs', {title: 'All Blogs', blogs: result});
     })

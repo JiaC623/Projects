@@ -202,25 +202,8 @@ body{
     font-size: 153px;
     opacity: 0.3;
   }
-  .decoration-pattern>span:nth-child(5){
-    left: 170px;
-    bottom: 265px;
-    font-size: 100px;
-    opacity: 0.5;
-  }
-  /* HOW have you been styles */
-  /* .decoration-pattern>span:nth-child(6){
-    left: 198px;
-    bottom: 181px;
-    font-size: 100px;
-    opacity: 0.5;
-  }
-  .decoration-pattern>span:nth-child(7){
-    left: 198px;
-    bottom: 181px;
-    font-size: 100px;
-    opacity: 0.5;
-  } */
+
+
 
   
 
@@ -284,11 +267,12 @@ body{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
+    background-color: white;
   }
   .feature-pics>img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .feature-thumbnail{
     display: flex;
@@ -377,12 +361,21 @@ body{
 
   /* todo module styles */
   .todo-list{
+    position: relative;
     margin-top: 30px;
     width: 250px;
     min-height: 300px;
     border-radius: 20px;
     background-color: lightblue;
     padding: 20px;
+  }
+  .todo-list>span{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 100px;
+    opacity: 0.5;
+    color: white;
   }
   .todo-list>p{
     font-weight: bold;
