@@ -5,12 +5,12 @@ This project was to build a PID temperature controller that restricted between 5
 <br>
 
 ### Physically Demonstrate:
-<img src="./images/final.png" style="width:90%;">
+<img src="./images/final.png" style="width:60%;">
 <br>
 
 ### Indication on MATLAB GUI
 The squiggly lines around some certain level showed a beautiful consistency when it was asked to keep some certain temperature. The overshoot and undershoot looked good and indicated the PID control. <br>
-<img src="./images/gui-demo.png" style="width:90%">
+<img src="./images/gui-demo.png" style="width:60%">
 <br>
 <br>
 <br>
@@ -28,7 +28,7 @@ The squiggly lines around some certain level showed a beautiful consistency when
 
 ### Thermistor Temperature converted to Resistance
 Obtained the approximate relationship by the help of voltage divider. <br>
-<img src="./images/approx-TR.png" style="width:90%">
+<img src="./images/approx-TR.png" style="width:60%">
 
 <br>
 
