@@ -1,5 +1,11 @@
-# This is A Simple Local Website
-First of all, the functionalities are not very complete. <br>
+# This is A Simple Localhost Website
+The main purpose of this website is to act like an album, along with todo lists displayed. <br>
+The functionalities are simple, as listed below: <br>
+- Display Time, Date, Weather with Temperature
+- Create and Delete Categories (set of images), but unavailable for Update
+- Todos / Blogs (they are both for plain text, though Blogs are meant to store longer texts)
+<br>
+<br>
 The work is highly based on YouTube Videos [Node.js Crash Course Tutorial](https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU), Public Weather API website [Open-Meteo](https://open-meteo.com/en/docs), and answers from [stack overflow](https://stackoverflow.com/). Please go check out these resources and they are greatly helpful. <br>
 <br>
 <br>
@@ -11,9 +17,10 @@ The wallpaper and weather icon images are from public network. <br>
 
 <br>
 
+## Why I wanted to build it
 This site I originally wanted to create is to show myself all the novels, comics, animes, video games (either mobile or on laptop), TV series, or any other artwork/stories through all kinds of media that I found really interesting and memorable, once I open this site.  <br>
 
-I used to keep photos on phone album, copy and paste on OneNote, or store in computer hard drive, which might not an eye-catching place for me to see (except for my posters on the wall). Now, I have this site, and everytime I open it, it randomly gives me some impressive and beautiful images I collected, and I can remind myself of every media that I read/watch/play, the moment I see them, I remember the happiness and stories knowing them. <br>
+I used to keep photos on phone album, copy and paste on OneNote, or store in computer hard drive, which might not an eye-catching place for me to see (except for my posters on the wall). Now, I have this site, and everytime I open it, it randomly gives me some impressive and beautiful images I collected, and I can remind myself of every media that I read/watch/play, the moment I see them, I remember the happiness and stories happened to them. <br>
 
 <br>
 Below are what it can and cannot do. 
@@ -46,10 +53,12 @@ The Home Page should initially look like:
 > A Big Thing to Notice... I haven't inplemented a way to update/edit the existing items, so if you want to edit, you will need to delete and create new. That's why I say this is really a simple local site.
 <br>
 <br>
+
 **ToDo Create Page**
 <img src="./demo-pictures/todo-create-page.png" style="width:120%;height:120%;">
 <br>
 <br>
+
 **Blog Create Page**
 <img src="./demo-pictures/blog-create-page.png" style="width:120%;height:120%;">
 <br>
@@ -58,10 +67,12 @@ The Home Page should initially look like:
 > Image Collection; if its Media-Type is a new one, the new Media-Type will also be displayed on the side. 
 <br>
 <br>
+
 **Image-Collection Create Page**
 <img src="./demo-pictures/imageCollection-create-page.png" style="width:120%;height:120%;">
 <br>
 <br>
+
 **Image-Collection Detail Page**
 <img src="./demo-pictures/imageCollection-detail.png" style="width:120%;height:120%;">
 <br>
@@ -70,7 +81,9 @@ The Home Page should initially look like:
 
 ## Other Limitations
 
-The site is all in `px`, I want it to display on a big screen (that's my laptop), so I did not include `em` to adjust tablet, phone or other screen size. 
+The site is all in `px`, I want it to display on a big screen (on my laptop), so I did not include `em` to adjust tablet, phone or other screen size. <br>
+
+Month and Date Display is not well coded. I basically sliced the four characters "July" and then sliced the two number, if it changes to "August" and single number, it will not work. 
 
 <br>
 <br>
@@ -117,7 +130,7 @@ Every text is basically stored in MongoDB, only images are stored in local drive
 > Everytime you create a new Image-Collection, have to go create a folder with images first, otherwise it raises an error (and it has some point, it is designed to show some pictures, always having pictures is ideal! ). It is inconvenient, just in my case, I originally stored my favourite images in my drive, and reasonably it is a faster way for me to check out my images instead of opening File Explorer. 
 
 ### 4. Go for a Weather API
-In my case, I used a public weather api here: [Open-Meteo](https://open-meteo.com/en/docs), and based on its reutrn `weathercode` value, I accordingly adjusted the icon image in `imgs/other` to display the weather. You may want to use your own icons (remember to change the file name to `Weather-Icons`) and APIs.
+In my case, I used a public weather api with my location (Hamilton, ON, Canada) here: [Open-Meteo](https://open-meteo.com/en/docs), and based on its reutrn `weathercode` value, I accordingly adjusted the background-position of weather image in `imgs/other` to display the correct weather icon. You may want to use your own icons (remember to change the file name to `Weather-Icons`) and APIs.
 
 <br>
 <br>
