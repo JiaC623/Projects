@@ -1,11 +1,14 @@
 # Projects
-Projects is a record of my school projects during academic years.
+This repository "Projects" is a record of my school projects during academic years.
+Please click into individual page for more information to showcase.
 Feel free to take a look at the lab or project folders.
-Below is some knowledge when I created this repo.
+
+
+Below is just to remind me of the knowledge when I created this repo.
 
 <br>
 
-## What is SSH key?
+### What is SSH key?
 > An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
 
 ---- resource from [Atlassian.com][atlassian-link]
@@ -22,7 +25,7 @@ SSH keys are a popular and widely used method for secure authentication and comm
 
 <br>
 
-## About Creating Repository
+### About Creating Repository
 I made it done since I followed the video to setup git bash, SSH keys and other things else. Finding videos on YouTube would be fast.
 
 1. Go to the directory you want to create `.git`
