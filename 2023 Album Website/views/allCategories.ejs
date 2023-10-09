@@ -29,6 +29,25 @@
 
     <div class="all-categories">
 
+        <% if (mediaName) { %>
+            <p style="color: white;
+            font-size: 36px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            " class="AFfont"> Media Type:</p>
+            <p style="color: rgba(255, 255, 255, 0.619);
+            font-size: 32px;
+            margin-bottom: 42px;
+            font-style: italic;" 
+            class="AFfont"> <%= mediaName %> </p>
+        <% } else { %> 
+            <p style="color: white;
+            font-size: 36px;
+            margin-bottom: 42px;
+            text-transform: uppercase;
+            " class="AFfont"> All Categories</p>
+        <% } %>
+
         <% if (categories.length>0) { %>
             <% categories.forEach(cate => { %>
                 <div>

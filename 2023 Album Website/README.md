@@ -1,8 +1,9 @@
 # This is A Simple Localhost Website
 The main purpose of this website is to act like an album, along with todo lists displayed. <br>
+This project worked as my application and implementation of web languages and tools I've learnt. <br>
 The functionalities are simple, as listed below: <br>
-- Display Time, Date, Weather with Temperature
-- Create and Delete Categories (set of images), but unavailable for Update
+- Display Time, Date, Weather with Temperature (region set in API in advanced)
+- Create and Delete Categories (sets of images), unavailable for Update action
 - Todos / Blogs (they are both for plain text, though Blogs are meant to store longer texts)
 <br>
 <br>
@@ -20,9 +21,9 @@ The wallpaper and weather icon images are from public network. <br>
 <br>
 
 ## Why I wanted to build it
-This site I originally wanted to create is to show myself all the novels, comics, animes, video games (either mobile or on laptop), TV series, or any other artwork/stories through all kinds of media that I found really interesting and memorable, once I open this site.  <br>
+I basically just wanted to create a webpage with all my recordings/screenshots/any other media for my loved novels/games/animes/etc. <br>
 
-I used to keep photos on phone album, copy and paste on OneNote, or store in computer hard drive, which might not an eye-catching place for me to see (except for my posters on the wall). Now, I have this site, and everytime I open it, it randomly gives me some impressive and beautiful images I collected, and I can remind myself of every media that I read/watch/play, the moment I see them, I remember the happiness and stories happened to them. <br>
+Like some people may put posters on wall in their rooms, or set their desktop wallpaper / sidebar menu to be something they like. I did it in the form of website, and I can practice some web development skills in the meantime. <br>
 
 <br>
 Below are what it can and cannot do. 
@@ -37,10 +38,12 @@ The Home Page should initially look like:
 <img src="./demo-pictures/ini-page.png" style="width:120%;height:120%;">
 
 
-### Images, Blogs, Todos!
+### Images, Blogs, Todos Display
 
 - "Today's Featured Photos" will randomly choose an image collection to display. 
-> Notice that it only displays the first five images, so if you want to change the order, you need to change their file names (alphabetical order if that's also your case). 
+- You can change the set of images by clicking the other tags (generated once you give the name of the set of images)
+- Or access and see the media types (diamond icons) on the side
+> Notice that it only displays the first five images, so if you want to change the order, you need to change their file names (alphabetical / numerical order depends on what's in your case). 
 
 - "Latest Blogs" will display all the Blog's Titles and Blog's Snippets (you'll see when you create a blog). By clicking the "Latest Blogs" or blogs, you'll head into the all-blogs page.
 
@@ -50,9 +53,9 @@ The Home Page should initially look like:
 
 ### Create One Image-Collection, Blog, or ToDo!
 
-- Click the tags on the Navigation bar: they contain all the existing items and allow people to create new.
+- Click any option on the Navigation bar: it contains all the existing items and allows to create new.
 
-> A Big Thing to Notice... I haven't inplemented a way to update/edit the existing items, so if you want to edit, you will need to delete and create new. That's why I say this is really a simple local site.
+> A Big Thing to Notice... I haven't inplemented a way to update/edit the existing items, so if you want to edit, you will need to delete and create new. That's why I say this is really roughly designed and just applied what I have.
 <br>
 <br>
 
@@ -66,12 +69,17 @@ The Home Page should initially look like:
 <br>
 <br>
 
-> Image Collection; if its Media-Type is a new one, the new Media-Type will also be displayed on the side. 
+> Image Collection; all Media-Types will be displayed on the side of image tags at Home Page
 <br>
 <br>
 
 **Image-Collection Create Page**
 <img src="./demo-pictures/imageCollection-create-page.png" style="width:120%;height:120%;">
+<br>
+<br>
+
+**Image-Collection Media Categorized Page**
+<img src="./demo-pictures/imageCollection-specific-media.png" style="width:120%;height:120%;">
 <br>
 <br>
 
@@ -85,12 +93,18 @@ The Home Page should initially look like:
 
 The site is all in `px`, I want it to display on a big screen (on my laptop), so I did not include `em` to adjust tablet, phone or other screen size. <br>
 
-Month and Date Display is not well coded. I basically sliced the four characters "July" and then sliced the two number, if it changes to "August" and single number, it will not work. 
+Month and Date Display is not well coded. I basically sliced the four characters "July" and then sliced the two number, if it changes to "August" and single number, it will be problematic. 
 
 <br>
 <br>
 
 ## How to Use then?
+
+Localhost website can only show on your (or my) own computer, it does not have a public website link. Therefore it can only be downloaded and run the js file. In my case, I will open VS Code and run 'node app' on terminal (with online database connected). if you open the browser and type in 'localhost:3000' (mostly port 3000 is used), you should be able to see it working. <br>
+
+> I have to say sorry because using your own database is almost necessary... I don't always keep the demo database running, and then request has no response. The error would say 'This site can’t be reached'.
+
+<br>
 
 ### 1. Make Sure You Have Node.js Installed
 Actually, please refer to `package.json` and see all dependencies. When `package.json` is in the folder directory you desire, open terminal and type `npm install` to automatically look up your json file and download everything used.  <br>
@@ -129,7 +143,7 @@ Every text is basically stored in MongoDB, only images are stored in local drive
 
 > For example, one default collection is called "small animals", and one folder inside `/public/imgs` directory has the same name. 
 
-> Everytime you create a new Image-Collection, have to go create a folder with images first, otherwise it raises an error (and it has some point, it is designed to show some pictures, always having pictures is ideal! ). It is inconvenient, just in my case, I originally stored my favourite images in my drive, and reasonably it is a faster way for me to check out my images instead of opening File Explorer. 
+> Everytime you create a new Image-Collection, have to go create a folder with images first, otherwise it raises an error (and it has some point, it is designed to show some pictures, always having pictures is ideal! ). It is inconvenient, just in my case, I won't run it when nothing is stored in my drive!
 
 ### 4. Go for a Weather API
 In my case, I used a public weather api with my location (Hamilton, ON, Canada) here: [Open-Meteo](https://open-meteo.com/en/docs), and based on its reutrn `weathercode` value, I accordingly adjusted the background-position of weather image in `imgs/other` to display the correct weather icon. You may want to use your own icons (remember to change the file name to `Weather-Icons`) and APIs.

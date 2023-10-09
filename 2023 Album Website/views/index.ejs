@@ -58,7 +58,13 @@
             <div class="feature-opts"> 
                 <div class="media-type">
                     <% typesArr.forEach(mediaType => { %>
-                        <div><span class="iconSyntax">&#xe668; &nbsp;</span><a data-doc="<%= mediaType %>" class="media-btn"><%= mediaType %></a></div>     
+                        <div>
+                            <span class="iconSyntax">&#xe668; &nbsp;</span>
+                            <a data-doc="<%= mediaType %>" 
+                                class="media-btn" 
+                                href="/all-cates/media/<%= mediaType %>"
+                                style="color: white;"><%= mediaType %></a>
+                        </div>     
                     <% }); %>
                 </div>
                 
@@ -68,7 +74,7 @@
                     <% if(namesArr.length>0){ %>
                         <% namesArr.forEach(name => { %>
                             <div data-doc="<%= name %>" class="iconSyntax">&#xe61f;
-                                <span style="font-family: Arial, Helvetica, sans-serif;"><%= name %></span> 
+                                <span><a style="font-family: Arial, Helvetica, sans-serif;" href="/tags/<%= name %>"><%= name %></a></span> 
                             </div>
                         <% }); %>
                     <% } %>

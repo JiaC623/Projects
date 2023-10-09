@@ -22,7 +22,8 @@ app.use(express.urlencoded({ extended: true}));
 // routes
 app.get('/', indexController.index_get);
 
-// app.use('/', indexRoutes);
+// tag clickable
+app.get('/tags/:tagName', indexController.specific_index_get);
 
 app.use('/all-cates', cateRoutes);
 

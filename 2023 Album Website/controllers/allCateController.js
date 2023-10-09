@@ -10,6 +10,16 @@ const cate_get = (req, res) => {
     
 }
 
+const specific_cate_get = (req, res) => {
+  const mediaName = req.params.mediaName;
+  Category.find({mediaType: mediaName})
+  .then(result => {
+    res.render('allCategories', {title: 'All-Categories', categories: result, mediaName});
+  })
+  .catch(err => console.log(err))
+
+}
+
 const cate_create = (req, res) => {
     const category = new Category(req.body);
     category.save()
@@ -48,6 +58,7 @@ const loopImg = (name) => {
 
 module.exports = {
     cate_get,
+    specific_cate_get,
     cate_create,
     cate_delete,
     cate_detail
