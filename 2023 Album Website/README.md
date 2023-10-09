@@ -5,7 +5,7 @@ The functionalities are simple, as listed below: <br>
 - Display Time, Date, Weather with Temperature (region set in API in advanced)
 - Create and Delete Categories (sets of images), unavailable for Update action
 - Todos / Blogs (they are both for plain text, though Blogs are meant to store longer texts)
-<br>
+
 <br>
 
 The work is highly based on YouTube Videos [Node.js Crash Course Tutorial](https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU), Public Weather API website [Open-Meteo](https://open-meteo.com/en/docs), and answers from [stack overflow](https://stackoverflow.com/). Please go check out these resources and they are greatly helpful. <br>
